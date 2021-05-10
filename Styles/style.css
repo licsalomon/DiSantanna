@@ -414,10 +414,7 @@ h4 {
         align-content: center;
         
     }
-    .portfolio p{
-        font-size: 3vw;
-    }
-    .contacto {
+       .contacto {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -431,7 +428,7 @@ h4 {
         font-size: 5vw;
     
     }
-    .formulario label, .mapa label, .contacto p, h4, .leyendas{
+    .formulario label, .mapa label, .contacto p, h4, .leyendas, .portfolio p, .boton{
         font-size: 3vw;  
     }
     .mapa{
