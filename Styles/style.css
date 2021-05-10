@@ -1,0 +1,446 @@
+body {
+    margin: 1%;
+    background-color: white;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "content content"
+        "footer footer";
+    gap: 0%;
+}
+
+/* header */
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #17202a;
+    width: 100%;
+    margin-right: 1%;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 3vw;
+    font-style: bold;
+}
+
+/* navegacion */
+.nav {
+    grid-area: nav;
+    background: #abb2b9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.nav a {
+    font-size: 1.7vw;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    ;
+    padding-left: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 7%;
+
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* content */
+.content {
+    grid-area: content;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.carousel h3 {
+    font-size: 2vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.carousel {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carouselslide {
+    width: 70%;
+}
+
+
+h1,
+p {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h3 {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "Patrick Hand", cursive;
+}
+
+/* contenido portfolio */
+
+.enlacesPortfolio {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5% 1% 1% 1%;
+
+}
+
+
+
+.enlacesPortfolio img {
+    width: 80%;
+    height: auto;
+    transition: width 2s;
+    /* position: absolute; */
+}
+
+.enlacesPortfolio img:hover {
+    width: 95%;
+    height: auto;
+}
+
+.texto,
+.titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.5%;
+    margin-bottom: 0%;
+}
+
+.texto h3 {
+    font-size: 2vw;
+    text-align: center;
+    align-self: center;
+}
+
+.titulo h3 {
+    font-size: 3vw;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    align-self: center;
+    margin: 0%;
+}
+
+/* .eeuu, .brasil, .bariloche{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    
+} */
+/* .eeuu img, .brasil img, .bariloche img{
+width: 80%;
+    height: auto;
+    transition: width 2s;
+    position: relative;
+}
+
+.eeuu img:hover, .brasil img:hover, .bariloche img:hover{
+    width: 95%;
+    height: auto;
+} */
+
+.leyendas {
+    position: relative;
+    /* left: 2%; */
+    /* top:100%; */
+    width: 100%;
+    background: #17202a;
+    color: white;
+    height: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2vw;
+    /* margin-top: 1%; */
+    margin-bottom: 1%;
+
+}
+
+/* .leyendas label{
+    display: inline;
+    font-family:  'Source Code Pro',monospace;
+   font-size: 1.2vw;
+} */
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    margin: 1%;
+    width: 100%;
+}
+
+.portfolio img {
+    width: 30%;
+    height: auto;
+    padding: 1%;
+}
+
+#brasil,
+#bsas {
+    background: #abb2b9;
+    ;
+}
+
+#eeuu,
+#bariloche {
+
+    /* display: flex; */
+    background: #f2f4f4;
+}
+
+#eeuu p,
+#bariloche p {
+    color: black;
+}
+
+.portfolio p {
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.7vw;
+}
+
+#eeuu {
+    align-self: baseline;
+}
+
+/* Contacto */
+
+/* .contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 5% 1% 1% 1%;
+
+} */
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 5% 1% 1% 1%;
+    width: 100%;
+}
+
+.formulario label {
+    display: inline-block;
+    width: 30%;
+}
+
+.contacto p,
+.formulario label,
+.mapa label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5vw;
+    margin: 1%;
+    color: black;
+}
+
+input {
+    margin: 1%;
+}
+
+.boton {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2vw;
+    margin: 1%;
+    color: black;
+    background: white;
+    align-self: center;
+}
+
+h4 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.3vw;
+    margin: 2%;
+}
+
+.redes {
+    width: 100%;
+    margin: 3%;
+    align-self: center;
+    text-align: center;
+}
+
+.redes li {
+    list-style: none;
+}
+
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    background: #abb2b9;
+    margin-top: 1%;
+}
+
+.footer p {
+    font-size: 1.3vw;
+    margin: 1%;
+}
+
+/* responsive */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    /* body{
+        background-color: red;
+    } */
+    .nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .nav a {
+        text-align: center;
+        padding: 0%;
+    }
+
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+        width: 100%;
+    }
+
+    .enlacesPortfolio {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .enlacesPortfolio img {
+        width: 50%;
+        height: auto;
+        transition: width 2s;
+        margin: 1%;
+    }
+
+    .enlacesPortfolio img:hover {
+        width: 70%;
+        height: auto;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolio img {
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+
+    #brasil {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: #abb2b9;
+        ;
+    }
+
+    #eeuu,
+    #bariloche {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background: #17202a;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width:990px) {
+
+    /* body{
+    background-color: white;
+} */
+    .nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        padding: 0%;
+        text-align: center;
+    }
+
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* body{
+        background-color: green;
+    } */
+
+}
